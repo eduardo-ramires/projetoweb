@@ -1,0 +1,263 @@
+# Documentação do Projeto: Sistema de Pedidos para Hamburgueria
+
+## Índice
+
+1. **Introdução**
+2. **Descrição do Projeto**
+3. **Tecnologias Utilizadas**
+4. **Estrutura do Projeto**
+5. **Funcionalidades Implementadas**
+6. **Personalizações Realizadas**
+7. **Scripts e Funcionalidades Adicionais**
+8. **Formulário de Finalização de Compra**
+9. **Conclusão**
+
+---
+
+## 1. Introdução
+
+Este documento descreve a criação de um sistema de pedidos para uma hamburgueria. 
+O sistema permite que os usuários naveguem pelo menu, adicionem itens ao carrinho 
+e finalizem a compra por meio de um formulário. O projeto envolve a personalização 
+de estilos, a implementação de funcionalidades interativas com JavaScript e a criação
+ de uma interface de usuário amigável.
+
+## 2. Descrição do Projeto
+
+O objetivo do projeto é desenvolver uma plataforma online para a hamburgueria, 
+onde os clientes possam visualizar o menu, escolher produtos, adicionar ao carrinho 
+e efetuar a compra de forma simples e intuitiva.
+
+## 3. Tecnologias Utilizadas
+
+- **HTML5**: Estruturação das páginas.
+- **CSS3**: Estilização das páginas.
+- **JavaScript**: Funcionalidades interativas e dinâmicas.
+- **Demais tecnoligias  e frameworks**: bootstrap, jquery, cloud flare, google maps api, entre outras
+
+## 4. Estrutura do Projeto
+
+A estrutura de diretórios do projeto é a seguinte:
+
+```
+/hamburgueria
+|-- index.html
+|-- c=documantação.html
+|-- css/
+|   |-- boostrap.css
+|   |-- font-awesome.min.css
+|   |-- responsive.css
+|   |-- style.css
+|   |-- style.css.map
+|   |-- boostrap.scss
+|-- js/
+|   |-- bootstrap.js
+|   |-- custom.js
+|   |-- jquery-3.4.1.min.js
+|-- images/
+|   |-- (imagens utilizadas no projeto)
+|-- fonts/
+|   |-- (fontes utilizadas no projeto)
+```
+
+## 5. Funcionalidades Implementadas
+
+- **Navegação pelo Menu**: Os clientes podem visualizar o menu de produtos.
+- **Adição ao Carrinho**: Funcionalidade para adicionar itens ao carrinho de compras.
+- **Visualização do Carrinho**: Exibe os itens selecionados com quantidades e preços.
+- **Finalização de Compra**: Formulário para finalizar a compra com dados do cliente.
+
+## 6. Personalizações Realizadas
+
+### Alterações de Fontes
+
+As fontes padrão foram alteradas para melhorar a legibilidade e a estética do site.
+ As fontes foram definidas no arquivo CSS principal (`style.css`):
+
+```css
+h1,
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+```
+
+### Alterações de Cores
+
+As cores foram personalizadas diretamente no html para refletir a identidade visual da hamburgueria. Exemplos de definições de cores:
+
+```
+style="color: #ffbe33;"
+style="color: white;"
+```
+
+### Ações de On Mouse Over
+
+Efeitos visuais foram adicionados para melhorar a interatividade do usuário:
+
+```css
+.button:hover {
+    background-color: #ffc107;
+    color: #212529;
+}
+```
+
+## 7. Scripts e Funcionalidades Adicionais
+
+### Adição de Itens ao Carrinho
+
+Um script JavaScript foi implementado para gerenciar a adição de itens ao carrinho junto a ula lista e um drop butom:
+
+```html
+ <a type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" class="order_online" href="#" style="color: white;">
+Carrinho
+
+</a>
+<div style="float: right; min-height: 10px;">
+<div class="collapse width" id="collapseWidthExample">
+    <div class="card card-body" style="width: 320px;">
+    <ul id="carrinho">
+        </ul>
+        
+    </div>
+</div>
+</div>
+```
+
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.item-menu');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            const itemName = this.getAttribute('data-name');
+            const itemPrice = parseFloat(this.getAttribute('data-price'));
+            addToCart(itemName, itemPrice);
+        });
+    });
+
+    function addToCart(name, price) {
+        total = total + price;
+        const cart = document.getElementById('carrinho2');
+        const newItem = document.createElement('li');
+        newItem.textContent = name + ' - R$' + price.toFixed(2);
+        cart.appendChild(newItem);
+
+        var elementoTotal = document.getElementById('valor_total');
+
+        elementoTotal.textContent = 'Total: ' + 'R$'+ total.toFixed(2);
+    }
+});
+
+```
+
+
+
+## 8. Formulário de Finalização de Compra
+
+Um formulário foi alterado para capturar os dados do cliente e finalizar a compra:
+
+```html
+<form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Nome completo..." required/>
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Numero de telefone..." required/>
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Endereço completo..." required/>
+              </div>
+              <div>
+                <select class="form-control nice-select wide" required>
+                  <option value="" disabled selected>
+                    Forma de pagamento...
+                  </option>
+                  <option value="">
+                    Pix
+                  </option>
+                  <option value="">
+                    Dinheiro
+                  </option>
+                  <option value="">
+                    Cartão de debito
+                  </option>
+                  <option value="">
+                    Cartão de credito
+                  </option>
+                </select>
+              </div>
+
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Verificar pedido
+                </button>
+                
+                  <div class="collapse width" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 320px;">
+                      <ul id="carrinho2">
+                     </ul>
+                     <ul >
+                      <li id="valor_total">Não há nenhum item no carrinho ainda! </li>
+                    </ul>
+                    </div>
+                </div>
+
+              
+              <div class="btn_box">
+                <button>
+                  Reserve Agora
+                </button>
+              </div>
+            </form>
+```
+
+### Validação do Formulário e mascara 
+
+A validação básica dos campos do formulário foi implementada para garantir que todos os campos obrigatórios sejam preenchidos antes do envio:
+
+```javascript
+    $(document).ready(function(){
+         $('#telefone').mask('(00) 00000-0000');
+    });
+function validarFormulario() {
+      var nomeCompleto = document.getElementById('nomeCompleto').value;
+      var telefone = document.getElementById('telefone').value;
+      var endereco = document.getElementById('endereco').value;
+      var formaPagamento = document.getElementById('formaPagamento').value;
+    
+      if (nomeCompleto === "" || telefone === "" || formaPagamento === "") {
+        alert("Por favor, preencha todos os campos obrigatórios.");
+        return false;
+      }
+    
+      if (!validarTelefone(telefone)) {
+        alert("Por favor, insira um número de telefone válido.");
+        return false;
+      }
+    
+     
+      alert("Pedido finalizado com sucesso");
+      document.getElementById('nomeCompleto').value = '';
+      document.getElementById('telefone').value = '';
+      document.getElementById('endereco').value = '';
+      document.getElementById('formaPagamento').selectedIndex = 0;
+      return true;
+    }
+    
+    function validarTelefone(telefone) {
+      return telefone.length >= 15;
+    }
+```
+
+## 9. Conclusão
+
+Este projeto fornece uma solução completa para a gestão de pedidos online em uma hamburgueria. 
+Com as personalizações de estilo, funcionalidades dinâmicas e um fluxo de usuário intuitivo, o
+ sistema melhora a experiência do cliente e facilita a administração dos pedidos.
+
+Para futuras melhorias, recomenda-se a integração com um sistema de pagamento online seguro, 
+otimizações de desempenho e a adição de funcionalidades como acompanhamento de pedidos em tempo 
+real e suporte a promoções e cupons de desconto.
+
+
+template obtido no: https://themewagon.com/themes/free-bootstrap-4-html5-restaurant-website-template-feane/

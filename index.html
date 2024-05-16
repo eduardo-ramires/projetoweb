@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <title> Na Brasa 672 </title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area" style="height: 90px;">
+    <div class="bg-box" style="height: 90px;">
+      <img id="imagem1" src="images/61b3bb95486a6como-Fotografar-Hamburguer.jpg" alt="">
+    </div>
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Na Brasa 672
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item ">
+                <a class="nav-link" onclick="home()" style="color: #ffbe33;">Home <span
+                    class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false"
+                aria-controls="collapseWidthExample" class="order_online" href="#" style="color: white;">
+                Carrinho
+              </a>
+              <div style="float: right; min-height: 10px;">
+                <div class="collapse width" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 320px;">
+                    <ul id="carrinho">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="#finalizar" class="order_online" style="color: white;">
+                Finalizar
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="menu" class="food_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Menu
+          </h2>
+        </div>
+        <ul class="filters_menu">
+          <li class="active" data-filter="*">Tudo</li>
+          <li data-filter=".burger">Hamburgers</li>
+          <li data-filter=".sobremesa">Sobremesas</li>
+          <li data-filter=".bebida">Bebidas</li>
+        </ul>
+        <div class="filters-content">
+          <div class="row grid">
+            <div class="col-sm-6 col-lg-4 all sobremesa">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/brownie.jpg" alt="" style="border-radius: 120px;">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Brownie
+                    </h5>
+                    <p>
+                      Brownie com creme de avelã.
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$20,00
+                      </h6>
+                      <a class="item-menu" data-name="Brownie" data-price="20">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all burger">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/ham4.jpg" alt="" style="border-radius: 120px;">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      All cheddar
+                    </h5>
+                    <p>
+                      Hamburger cheddar cremoso
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$30,00
+                      </h6>
+                      <a class="item-menu" data-name="All cheddar" data-price="30">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all sobremesa">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/sorvete.jpg" style="border-radius: 120px;" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Sorvete
+                    </h5>
+                    <p>
+                      Escolha 3 sabores de sorvetes.
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$14,00
+                      </h6>
+                      <a class="item-menu" data-name="Sorvete" data-price="14">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all bebida">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/pepsi.jpg" style="border-radius: 120px;" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Pepsi
+                    </h5>
+                    <p>
+                      Refrigerante cola 600ml
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$7,00
+                      </h6>
+                      <a class="item-menu" data-name="Pepsi" data-price="7">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all burger">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/ham3.jpg" alt="" style="border-radius: 120px;">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Baccon
+                    </h5>
+                    <p>
+                      Hamburger com bacon
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$33,00
+                      </h6>
+                      <a class="item-menu" data-name="Baccon" data-price="33">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all burger">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/ham1.avif" alt="" style="border-radius: 120px;">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Gorgonzola
+                    </h5>
+                    <p>
+                      Hamburger com gorgonzola
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$60,00
+                      </h6>
+                      <a class="item-menu" data-name="Gorgonzola" data-price="60">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all bebida">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/ceva-sem.jpg" style="border-radius: 120px;" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Ceva
+                    </h5>
+                    <p>
+                      Ceva de 600ml marca cevada
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$02,00
+                      </h6>
+                      <a class="item-menu" data-name="Ceva" data-price="02">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all burger">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/ham2.png" alt="" style="border-radius: 120px;">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Uno malles
+                    </h5>
+                    <p>
+                      Hamburgers mexicano
+                      <br>
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$133,99
+                      </h6>
+                      <a class="item-menu" data-name="Uno malles" data-price="133">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 all bebida">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="images/patagonia.jpg" style="border-radius: 120px;" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      Patagonia
+                    </h5>
+                    <p>
+                      Ceva de 600ml marca patagonia
+                    </p>
+                    <div class="options">
+                      <h6>
+                        R$27,99
+                      </h6>
+                      <a class="item-menu" data-name="Patagonia" data-price="27">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                          style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                            </g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                          <g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="finalizar" class="book_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Finalizar pedido
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form_container">
+              <form id="pedidoForm" action="#" onsubmit="return validarFormulario()">
+                <div>
+                  <input id="nomeCompleto" type="text" class="form-control" placeholder="Nome completo..." required />
+                </div>
+                <div>
+                  <input id="telefone" type="text" class="form-control" placeholder="Número de telefone..." required />
+                </div>
+                <div>
+                  <input id="endereco" type="text" class="form-control" placeholder="Endereço completo..." />
+                </div>
+                <div>
+                  <select id="formaPagamento" class="form-control nice-select wide" required>
+                    <option value="" disabled selected>Forma de pagamento...</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão de débito">Cartão de débito</option>
+                    <option value="Cartão de crédito">Cartão de crédito</option>
+                  </select>
+                </div>
+                <button data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false"
+                  aria-controls="collapseWidthExample" class="btn btn-primary">visualizar Pedido</button>
+                <div style="float: right; min-height: 10px;">
+                  <div class="collapse width" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 320px;">
+                      <ul id="carrinho2">
+
+                      </ul>
+                      <ul id="valor_total">
+                        <li>Não há itens no carrinho</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Finalizar Pedido</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="map_container ">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13864.681461059827!2d-53.8112358!3d-29.68584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cb6cac59112d%3A0x5305ea139ef0360c!2sNa%20Brasa%20Burger%20672%20SM!5e0!3m2!1spt-BR!2sbr!4v1714759507147!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <div class="footer_contact">
+              <h4>
+                Nosso contato
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    Localização
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Telefone: +55 98124-7295
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    demo@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer_detail">
+              <a href="" class="footer-logo">
+                Na Brasa 672
+              </a>
+              <p>
+                Eduardo - Ramires
+              </p>
+              <div class="footer_social">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h4>
+              Horario:
+            </h4>
+            <p>
+              Todo dia
+            </p>
+            <p>
+              18:00 a 00:00
+            </p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a><br><br>
+            &copy; <span id="displayYear"></span> Distributed By
+            <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#telefone').mask('(00) 00000-0000');
+      });
+    </script>
+</body>
+
+</html>
